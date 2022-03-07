@@ -412,60 +412,6 @@ footer .derechos {
   width: 50%;
 }
 
-.botonPortada {
-  flex: 1 1 auto;
-  padding: 1rem 0rem;
-  color: #666;
-}
-
-#diseñoGraficoyCommunity {
-  height: 400px;
-  margin-top: 5em;
-  background-color: #F2979A;
-}
-#diseñoGraficoyCommunity #subtituloServicios {
-  text-align: center;
-  color: #edeee0;
-}
-#diseñoGraficoyCommunity div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#diseñoGraficoyCommunity div div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#diseñoGraficoyCommunity div div .position {
-  position: relative;
-  margin: 0px 36px;
-  width: 21em;
-}
-#diseñoGraficoyCommunity div div .position img {
-  height: 225px;
-  width: 323px;
-  margin-top: 26px;
-}
-#diseñoGraficoyCommunity div div .position .subtitulosServicios {
-  position: absolute;
-  left: 0em;
-  top: 1em;
-  text-align: center;
-  color: #71978B;
-  background-color: #edeee0;
-}
-#diseñoGraficoyCommunity section div .botonPresupuesto {
-  text-decoration: none;
-  width: 207px !important;
-  height: 38px !important;
-  color: #71978B !important;
-  border: 1px solid #71978B !important;
-  border-radius: 5px;
-  margin: 15px 78px;
-  padding: 4px;
-}
-
 .seccion-muestra-tabajo {
   position: relative;
   margin-top: 20px;
@@ -540,6 +486,7 @@ footer .derechos {
   /* height: auto; */
   margin-top: 100px;
   margin-bottom: 80px;
+  height: 480px;
 }
 .seccion-packs-servicios .contenedor-titulo-packs {
   padding: 50px 0px 30px 0px;
@@ -575,6 +522,18 @@ footer .derechos {
 .seccion-packs-servicios .contenedor-all-items-packs .contenedor-item-packs .boton-desplegable {
   display: none;
 }
+.seccion-packs-servicios .seccion-boton-te-ofrecemos {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  font-weight: bold;
+}
+.seccion-packs-servicios .seccion-boton-te-ofrecemos .boton-te-ofrecemos {
+  padding: 10px 40px;
+  border: solid 2px #EDEEE0;
+  border-radius: 3px;
+  color: #EDEEE0;
+}
 
 .hover-packs-servicios:hover {
   animation: extencion-info-packs 1.5s;
@@ -586,6 +545,9 @@ footer .derechos {
   padding: 40px 20px;
   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1), -5px 5px 20px 0 rgba(0, 0, 0, 0.1);
   animation: fade-in 2s;
+}
+.hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable ul {
+  padding-left: 40px;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable ul li {
   color: #617C72;
@@ -621,7 +583,7 @@ footer .derechos {
 }
 @keyframes extencion-info-packs {
   0% {
-    height: 410px;
+    height: 480px;
   }
   100% {
     height: 900px;

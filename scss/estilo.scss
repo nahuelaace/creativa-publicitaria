@@ -548,79 +548,6 @@ footer{
 }
 
 
-////////diseñograficoPag
-
-
-.botonPortada {
-    flex: 1 1 auto;
-    padding: 1rem 0rem;
-    color: #666;
-}
-
-
-#diseñoGraficoyCommunity{
-    height: 400px;
-    margin-top: 5em;   
-    background-color: #F2979A;;
-    #subtituloServicios{       
-        text-align: center;                  
-        color: #edeee0;
-    }    
-
-    div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        div{
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .position {
-
-                position: relative;
-                margin: 0px 36px;//meti margin para separar los dos div//              
-                width: 21em;
-                
-
-                img {
-                    height: 225px;
-                    width: 323px;
-                    margin-top: 26px;
-                }
-
-                .subtitulosServicios{
-       
-                    position: absolute;            
-                    left: 0em;
-                    top: 1em;
-                    text-align: center;   
-                    color: #71978B;;
-                    background-color: #edeee0;
-                }
-            }         
-           
-
-        }
-    }    
-    
-    section{
-        div{
-            .botonPresupuesto {
-                text-decoration: none;
-                width: 207px !important;
-                height: 38px !important;
-                color: #71978B !important;
-                border: 1px solid #71978B !important;
-                border-radius: 5px;
-                margin: 15px 78px;
-                padding: 4px
-            }
-        }
-    }   
-    
-}
 
 //////////Mis Trabajos
 .seccion-muestra-tabajo{
@@ -710,7 +637,7 @@ footer{
     /* height: auto; */
     margin-top: 100px;
     margin-bottom: 80px;
-    
+    height: 480px;
     .contenedor-titulo-packs{
         padding: 50px 0px 30px 0px;
         .titulo-seccion-packs{
@@ -752,6 +679,19 @@ footer{
             }
         }
     }
+
+    .seccion-boton-te-ofrecemos{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+        font-weight: bold;
+        .boton-te-ofrecemos{
+            padding: 10px 40px;
+            border: solid 2px #EDEEE0;
+            border-radius: 3px;
+            color: #EDEEE0;
+        }
+    }
     
 }
 
@@ -769,9 +709,13 @@ footer{
             box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%),  
             -5px 5px 20px 0 rgb(0 0 0 / 10%);
             animation: fade-in 2s;
-            ul li{
-                color: #617C72;
-            }
+
+            ul{
+                padding-left: 40px;
+                li{
+                    color: #617C72;
+                }
+            } 
 
             .texto-desplegable{
                 margin-bottom: 30px;
@@ -813,7 +757,7 @@ footer{
 
     @keyframes extencion-info-packs {
         0%{
-            height: 410px;
+            height: 480px;
         }
         
         100%{
