@@ -10,6 +10,12 @@
   margin-bottom: 0px !important;
   margin-top: 0px !important;
 }
+* .row {
+  --bs-gutter-x:0px;
+}
+* ul {
+  padding-left: 0px;
+}
 
 body {
   background-color: #EDEEE0 !important;
@@ -63,17 +69,38 @@ header .logo {
 header nav div div {
   padding-top: 24px;
 }
-header nav div div ul {
+header nav div {
+  display: flex;
   justify-content: center;
+  width: 100%;
+}
+header nav div .contenedor-navbarr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+header nav div .contenedor-navbarr .items-navbarr {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
   margin-top: 20px;
 }
-header nav div div ul li {
-  margin: 0px 27px;
-}
-header nav div div ul li a {
+header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 200px;
   color: #ffffff !important;
   border: 1px solid #ffffff !important;
   border-radius: 6px !important;
+}
+
+.item-navbarr {
+  width: 180px;
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor-carrusel {
@@ -639,7 +666,7 @@ footer .derechos {
 }
 .contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-img-servicio .img-servicio {
   width: 100%;
-  height: 38 0px;
+  height: 380px;
 }
 .contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio {
   height: auto;
