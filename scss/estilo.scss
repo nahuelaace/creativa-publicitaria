@@ -730,7 +730,7 @@ footer{
 
 
 .hover-packs-servicios:hover{
-    animation: extencion-info-packs 2s;
+    animation: extencion-info-packs 1.5s;
     height: 900px;
 
     .contenedor-all-items-packs .contenedor-item-packs{
@@ -741,7 +741,7 @@ footer{
             padding: 40px 20px;
             box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%),  
             -5px 5px 20px 0 rgb(0 0 0 / 10%);
-
+            animation: fade-in 2s;
             ul li{
                 color: #617C72;
             }
@@ -752,15 +752,31 @@ footer{
             }
 
             .boton-desplegable{
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border: solid 2px #617C72;
-                border-radius: 2px;
-                margin-left: 260px;
+                border-radius: 6px;
+                margin-left: 170px;
+                width: 150px;
+                height: 30px;
                 /* margin-right: 40px; */
                 a{
                     color: #617C72;
                 }
                 
+            }
+        }
+
+        @keyframes fade-in {
+            0%{
+                opacity: 0;
+            }
+            55%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
             }
         }
         
@@ -776,6 +792,7 @@ footer{
         100%{
             height: 900px;
         }
+        
     }
 }
 

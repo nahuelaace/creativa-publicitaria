@@ -550,7 +550,7 @@ footer .derechos {
 }
 
 .hover-packs-servicios:hover {
-  animation: extencion-info-packs 2s;
+  animation: extencion-info-packs 1.5s;
   height: 900px;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable {
@@ -558,6 +558,7 @@ footer .derechos {
   display: block;
   padding: 40px 20px;
   box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1), -5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  animation: fade-in 2s;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable ul li {
   color: #617C72;
@@ -567,14 +568,29 @@ footer .derechos {
   color: #617C72;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable .boton-desplegable {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid 2px #617C72;
-  border-radius: 2px;
-  margin-left: 260px;
+  border-radius: 6px;
+  margin-left: 170px;
+  width: 150px;
+  height: 30px;
   /* margin-right: 40px; */
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable .boton-desplegable a {
   color: #617C72;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes extencion-info-packs {
   0% {
