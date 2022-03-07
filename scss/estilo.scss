@@ -718,10 +718,52 @@ footer{
     align-items: center;
     flex-direction: column;
     
-    .contenedor-servicio{
-        width: 570px;
+    .contenedor-de-servicios{
+        display: flex;
         
+        .contenedor-servicio{
+            width: 570px;
+            height: 646px;
+            background-color: #F2979A;
+            margin: 50px 20px;
+
+            .contenedor-img-servicio{
+                
+
+                .img-servicio{
+                    width: 100%;
+                    
+                }
+            }
+
+            .contenedor-descripcion-servicio{
+                height: auto;
+                color: #ffffff;
+                padding: 5% 13%;
+
+                .contenedor-texto-servicio{
+                    height:170px;
+                }
+                .ver-mas-item-servicios{
+                    width: 120px;
+                    padding: 5px 10px;
+                    color: #ffffff ;
+                    border: 2px solid #ffffff;
+                    border-radius: 4px ;
+                    display: flex;
+                    justify-content: center;
+                    
+                    a{
+                        text-align: center;
+                        color: #ffffff;
+                        text-decoration: none;
+                    }     
+                    
+                }
+            }
+        }
     }
+    
 }
 
 

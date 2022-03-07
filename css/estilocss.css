@@ -542,8 +542,39 @@ footer .derechos {
   align-items: center;
   flex-direction: column;
 }
-.contenedor-mis-servicios .contenedor-servicio {
+.contenedor-mis-servicios .contenedor-de-servicios {
+  display: flex;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio {
   width: 570px;
+  height: 646px;
+  background-color: #F2979A;
+  margin: 50px 20px;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-img-servicio .img-servicio {
+  width: 100%;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio {
+  height: auto;
+  color: #ffffff;
+  padding: 5% 13%;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .contenedor-texto-servicio {
+  height: 170px;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .ver-mas-item-servicios {
+  width: 120px;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .ver-mas-item-servicios a {
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .contacto {
