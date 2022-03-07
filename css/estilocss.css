@@ -535,6 +535,10 @@ footer .derechos {
   color: #EDEEE0;
 }
 
+.tamaño-seccion-diseño {
+  height: 530px;
+}
+
 .hover-packs-servicios:hover {
   animation: extencion-info-packs 1.5s;
   height: 900px;
