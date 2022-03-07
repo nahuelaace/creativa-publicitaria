@@ -1,0 +1,18 @@
+{
+  "name": "creativapublicitaria",
+  "version": "1.0.0",
+  "description": "Creativa Publicitaria crea y desarrolla marcas estratégicas de manera auténtica. Para pequeñas y grandes empresas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilocss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {}
+}

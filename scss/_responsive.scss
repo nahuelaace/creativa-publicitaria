@@ -1,0 +1,371 @@
+// MOBILEEEEEEEEEEEEEEEEEEEE
+
+
+
+@media only screen and (max-width: 1200px){
+    #serviciosHome section #subtituloServicios {
+        position: absolute;
+        left: 10em;
+    }
+}
+
+    
+@media only screen and (max-width: 412px){
+
+   
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-family: 'Balivia';
+    }
+
+    .imgSlide {
+        // height: 268px;
+        // width: 401px;
+
+        height: 256px;
+        width: 359px;
+    }
+
+    #serviciosHome {
+        margin-top: 0em;
+
+        #serviciosTitulo{
+            display: none;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div{
+                .position {    
+                    width: 21em;      
+                    margin: 36px;
+                    height: 28em;
+
+                    img{
+                        height: 198px;
+                        width: 308px;
+                        padding-left: 2em;
+                    }
+
+                    p {                          
+                        padding: 1em 2em;
+                        font-size: 19px;
+                        height: 141px;
+                    }
+
+                    h2 {                    
+                        left: 26px;
+                        top: 74px;
+                    }
+
+                    .card-body {
+                        width: 92px !important;
+                        height: 13px !important;
+                        color: #ffffff !important;
+                        border: 2px solid #ffffff !important;
+                        border-radius: 6px;
+                        margin: 24px 31px;
+                    }   
+                
+                }
+            } 
+        }
+    }
+
+   
+    
+    
+
+
+////////////////////////////////////
+
+    #marcasHome{
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                .position{
+                    width: 19em;
+                    margin: 19px 51px;
+
+                    p{
+                        font-size: 19px;
+                    }
+                    img{
+                        height: 225px;
+                        width: 299px;      
+                        margin-top: -1px;   
+                    }
+                }
+            }
+        }
+    }
+
+   
+ 
+    /////////////////////////////
+
+    #testimonios {
+        margin: 4em 0em;
+        #subtituloServicios {
+            margin: 0px 108px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            div{
+                .position {
+                    margin: 20px;
+                    width: 20em;
+
+                    p {
+        
+                        padding: 0em 1em;
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+    .florMobile {
+        
+        height: 7em;        
+    }
+
+    
+    ///////////////////////
+
+    #presupuestoHome {
+        display: flex;
+        flex-direction: column;
+        margin: 120px;
+    }
+
+    ///////////////////
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        section {
+            margin: 31px 0px;
+            width: 412px;
+
+            div {
+                width: 10em;
+                p {
+        
+                    font-size: 19px;
+                    margin: 11px 33px;
+                  
+                }
+                
+            }
+        }
+    }
+
+    footer section nav ol li a {
+        display: none;}
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        display: none;}
+
+    .iconosRedes {
+        width: 412px;
+        padding: 0px 125px;
+        display: flex;
+        flex-direction: row;
+        div{
+            width: 340px;
+        }
+    }
+    
+    .redesMobile{
+        height: 77px;
+    }
+
+    ///////oculto el donde estoy
+
+    #ubicacion{
+        display: none;
+    
+    }
+
+    //////////main de quiensoyPag, diseño grafico pag y community pag
+
+    .mobile{
+        display: block; ///este es el texto. solo deje los titulos sobre las imagenes de portadas
+        p{
+            color: #666;
+            margin: 6px;
+        }
+    }
+
+    main{
+        position: relative;
+        img{
+            width: 412px;
+            height: 230px;
+        }
+        section{
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            p{
+                display: none; //aca saque los textos de las portadas
+            }
+        }
+    }
+
+    //////Pag servivios- bloque diseñograficoYcomunity
+ 
+    #diseñoGraficoyCommunity{
+        height: 56em;  ///ACA//
+        margin-top: 5em;   
+        background-color: #F2979A;;
+        #subtituloServicios{       
+            text-align: center;                  
+            color: #edeee0;
+        }    
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                margin: 0px 37px;
+                display: flex;
+                flex-direction: column; //ACA//
+                justify-content: center;
+    
+                .position {
+    
+                    position: relative;
+                    margin: 0px 14px;//ACAAAAAAAAAAAAA//              
+                    width: 21em;
+                    
+    
+                    img {
+                        height: 225px;
+                        width: 323px;
+                        margin-top: 26px;
+                    }
+    
+                    .subtitulosServicios{
+           
+                        position: absolute;            
+                        left: 0em;
+                        top: 1em;
+                        text-align: center;   
+                        color: #71978B;;
+                        background-color: #edeee0;
+                    }
+                }         
+               
+    
+            }
+        }    
+        
+        section{
+            div{
+                .botonPresupuesto {
+                    text-decoration: none;
+                    width: 207px !important;
+                    height: 38px !important;
+                    color: #71978B !important;
+                    border: 1px solid #71978B !important;
+                    border-radius: 5px;
+                    margin: 15px 78px;
+                    padding: 4px
+                }
+            }
+        }   
+        
+    }
+
+    .subtitulosContactos {
+        margin: 2em 2em;
+        padding-top: 48px;
+    }
+
+    .footerMarginxFlor{
+        margin-top: 6em;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 360px){
+    #serviciosHome div div .position {    
+    
+        margin: 13px;
+    }
+
+    main{
+        position: relative;
+        img{
+            width: 360px;
+            height: 230px;
+        }
+    }
+
+
+    footer section {        
+
+        margin: 31px 11px;
+        width: 339px;
+
+        div{
+            p{
+                margin: 11px 0px;
+            }
+        }
+    }
+
+    .iconosRedes {
+        width: 360px;
+        padding: 0px 99px;
+    }
+
+    #marcasHome div div .position {
+        margin: 13px 36px;   
+    }
+
+    #diseñoGraficoyCommunity div div .position {       
+        margin: 0px -17px;
+    }
+
+    #contacto div {
+        width: 360px;
+        margin: 3em 0em;
+    }
+
+    .subtitulosContactos {
+        margin: 2em 1em;
+        padding-top: 48px;
+    }
+
+    .footerMarginxFlor{
+        margin-top: 6em;
+    }
+ 
+    
+
+   
+}
+
+
+

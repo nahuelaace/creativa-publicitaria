@@ -1,0 +1,783 @@
+*{
+    
+    h2{
+        margin-top: 0px;
+        margin-bottom: 0px !important;
+    }
+    a{
+        text-decoration: none !important;
+    
+    }
+    p{
+        margin-bottom: 0px !important;
+        margin-top: 0px!important;
+    }
+}
+
+
+
+// ESTILOS GENERALES/////////////////
+body{
+    background-color: #EDEEE0 !important;
+}
+
+
+
+.texto-1{
+    font-size: 4rem;
+    font-family: 'Balivia' ;
+    
+}
+
+
+.texto-2{
+    font-size: 3rem;
+    font-family: 'Balivia';
+    text-align: center;          
+}
+
+
+.texto-3{
+    font-size: 1.2rem;
+    font-family: 'Balivia';
+    font-weight: 100;
+     
+}
+
+.texto-4{
+    font-family: 'Balivia';
+    font-weight: 100;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Balivia';
+    src: url('../fonts/Balivia\ \(1\).ttf') format('ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'CodeSaver';
+    src: url('../fonts/CodeSaver-Regular\ \(1\).otf') format('otf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+.mobile{
+    display: none;
+}
+
+///////////////////////////////////HeaderHome
+
+header {
+    background-color: #71978B;
+
+    .logo{
+        padding: 20px;
+    }
+
+    nav{
+        
+        div{
+            div{                
+                padding-top: 24px;                
+            }
+        }
+        div{
+            div{
+                ul{
+                    justify-content: center;
+                    margin-top: 20px;
+                    li{
+                        margin: 0px 27px;
+                        a{ 
+                            color: #ffffff !important;                          
+                            border: 1px solid #ffffff !important;
+                            border-radius: 6px !important; 
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}                                                                                                 
+
+// del main, carrusel de boots
+// 
+
+.contenedor-carrusel{
+    display: flex;
+    justify-content: center;
+    width: 935px;
+    margin: 0px auto;
+}
+
+.contenido-carrusel{
+    position: absolute;
+    left:10%;
+    bottom: 30%;
+    margin-top: 10%;
+    padding-bottom: 30px;
+    text-align: start;
+    width: 80%;
+}
+
+
+.imgSlide{
+
+    height: 530px;
+    width: 1170px;
+}
+
+.carousel-indicators [data-bs-target] {
+    //son las rayas del slider. no logro cambiarlas a circulos. vi q rosa quedo medio feo y probe gris
+    background-color: #F2979A !important;
+}
+
+///////////////////////bloqueServicios
+
+#serviciosHome{
+    margin-top: 5em;   
+    margin-bottom: 6em;
+        .servicios-titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 60px;
+            margin: 10px auto;
+            background-color: #F2979A;     
+            text-align: center;   
+            color: #ffffff;
+        }
+  
+    
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        div{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .contenedor-items-servicios-color{
+                background-color: #F2979A;
+                margin: 20px; //meti margin para separar los dos div//
+                height: 25em;
+                width: 28em;  
+                position: relative;
+                
+
+                .titulo-item-servicios{
+                    position: absolute;
+                    top: 40px;
+                    left: 70px;
+                    color: #ffffff;
+                    
+                    font-family: 'Balivia';
+                    z-index: 100;
+                    text-align: left;
+                    
+                    .bg-color-1{
+                        background-color: #F2979A;
+                        text-align: left;
+                        margin-right: auto;
+                    }
+                }
+
+                .contenedor-item-servicios{
+                    padding: 0px 5% 0px 20%;
+                    justify-content: start;
+                    display: flex;
+                    flex-direction: column;
+                    height: 338px;
+                    
+                    img {
+                        height: auto;
+                        width: auto;    
+                    }
+   
+                    .contenedor-descripcion-servicios{
+                        display: flex;
+                        justify-content: start;
+                        font-family: 'Balivia';
+                        color: white;
+                        margin-top: 3%;
+                        margin-bottom: 2%;
+                    }
+    
+                    .ver-mas-item-servicios{
+                        width: 120px;
+                        padding: 5px 10px;
+                        color: #ffffff ;
+                        border: 2px solid #ffffff;
+                        border-radius: 4px ;
+                        
+                        
+                        a{
+                            text-align: center;
+                            color: #ffffff;
+                            text-decoration: none;
+                        }     
+                        
+                    }
+                }
+                
+
+              
+            }
+            
+           
+
+        }
+    }       
+    
+}
+
+///////////////////////bloqueMarcas
+#marcasHome{  
+    background-color: #71978B;
+    padding-bottom: 20px;
+    .titulo-marcas{
+        
+        padding: 20px;   
+        color: #edeee0;
+        text-align: center;        
+        
+    }
+    
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        div{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .position {
+                
+                margin: 0px 36px;//meti margin para separar los dos div//              
+                width: 21em;
+                
+
+                img {
+                    height: 225px;
+                    width: 323px;
+                    margin-top: 26px;
+                }
+
+              
+
+                p {
+                    font-family: 'Balivia';
+                    font-weight: 100;
+                    font-size: 17px;
+                    height: 8em;
+                    color: white;
+                    padding: 10px 0em;
+
+                }
+            }
+            
+           
+
+        }
+    }       
+    
+}
+///////////////////////bloqueTestimonios
+#testimonios{         
+    margin-top: 4rem;
+    position: relative;
+    .subtituloServicios{
+       margin: 0 auto;
+        text-align: center;        
+        padding-top: 27px;          
+        color:#617C72;
+    }
+    
+    .posicion-ramas-1{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -10;
+    }
+
+    .posicion-ramas-2{
+        position: absolute;
+        left: 0px;
+        z-index: -9;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        div{
+
+           
+            .position {
+                
+                margin: 20px; //meti margin para separar los dos div//
+                width: 31em;
+                
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    
+                }
+
+              
+
+                p{
+                    font-family: 'Balivia';
+                    font-weight: 100;
+                    font-size: 17px;
+
+
+                    color: #71978B;
+                    padding: 1em 1em;
+                }
+            }           
+        
+        }
+    }          
+}
+///////////////////////bloquePresupuesto
+.presupuestoHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6em 13em;
+
+    div{
+        display: flex;
+    
+        p{
+            color: #71978B;
+            width: 90%;
+        }
+    
+        .boton-solicitar{
+            margin: auto auto auto 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color:#617C72;
+            border-radius: 1px;
+            width: 150px;
+            height: 40px;
+            
+        }
+    }
+    
+}
+
+.iconosRedes{
+    
+    display: flex;
+    justify-content: center;
+    
+    div{
+    margin: 0px 15px;
+    }
+
+    .redesMobile{
+        transform: scale(1.1);
+    }
+}
+
+///////Footer
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px auto 3rem auto;
+    
+    section{
+               
+        
+        width: 400px;
+        
+        nav{
+            margin-top: 3%;
+            ol{
+                
+                li{
+                    a{
+                        color: dimgrey; text-decoration: none; font-size: 16px;
+                    }
+                }
+            }
+
+        }
+    }     
+    
+    
+   
+
+    section{
+        
+        width: 400px;
+        div{
+            height: 45px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            p{
+                text-align: center;
+                width: 338px;
+                color: dimgrey;
+                font-size: 16px; 
+                font-family: var(--bs-body-font-family);
+            }
+        }
+    }
+
+    .derechos{
+        text-align: end;
+    }
+
+
+}
+
+///////////contactoPag
+
+#contacto{
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4em;
+        div{
+            p{
+                color: #666;
+            }
+        }
+    }
+}
+
+#ubicacion{
+    width: 935px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .subtitulosContactos{
+        padding:50px 0px;
+        text-align: center;
+        width:400px;
+        margin: 0px auto;
+    }
+
+    section{
+        
+        iframe{
+            width: 100%;
+            margin: 6px auto;
+        }
+    }
+
+}
+
+
+
+
+//////////main de quiensoyPag, diseño grafico pag y community pag
+.centrado{
+    width: 935px;
+    height: 760px;
+    margin: 20px auto 0px auto;
+    background-image: url('../images/Mask Group.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 2%;
+}
+  
+.contenedor-info-quiensoy{
+    width: 100%;
+    padding-left: 2%;
+}
+.ajuste-titulo-quiensoy{
+    width: 80%;
+    padding-top: 5%;
+    
+}  
+.contenedor-p-info-quiensoy{
+    width: 50%;
+}
+
+
+////////diseñograficoPag
+
+
+.botonPortada {
+    flex: 1 1 auto;
+    padding: 1rem 0rem;
+    color: #666;
+}
+
+
+#diseñoGraficoyCommunity{
+    height: 400px;
+    margin-top: 5em;   
+    background-color: #F2979A;;
+    #subtituloServicios{       
+        text-align: center;                  
+        color: #edeee0;
+    }    
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        div{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .position {
+
+                position: relative;
+                margin: 0px 36px;//meti margin para separar los dos div//              
+                width: 21em;
+                
+
+                img {
+                    height: 225px;
+                    width: 323px;
+                    margin-top: 26px;
+                }
+
+                .subtitulosServicios{
+       
+                    position: absolute;            
+                    left: 0em;
+                    top: 1em;
+                    text-align: center;   
+                    color: #71978B;;
+                    background-color: #edeee0;
+                }
+            }         
+           
+
+        }
+    }    
+    
+    section{
+        div{
+            .botonPresupuesto {
+                text-decoration: none;
+                width: 207px !important;
+                height: 38px !important;
+                color: #71978B !important;
+                border: 1px solid #71978B !important;
+                border-radius: 5px;
+                margin: 15px 78px;
+                padding: 4px
+            }
+        }
+    }   
+    
+}
+
+//////////Mis Trabajos
+.seccion-muestra-tabajo{
+    position: relative;
+    margin-top: 20px;
+    background-color: #F2979A;
+    width: 100%;
+    height: 485px;
+
+    .ramas-claras-sec-trabajo{
+        position: absolute;
+        
+        img{
+            width: 250px;
+        }
+    }
+
+    .titulo-muestra-trabajo{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 900px;
+        top: 88px;
+        z-index: 100;
+        .bg-titulo-muestra{
+            margin: 13px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            width: 400px;
+            height: 100px;
+            background-color: #EDEEE0;
+
+        }
+
+        .texto-pequeño-muestra{
+            margin: 13px;
+            color: #EDEEE0;
+            
+        }  
+    }
+
+    .contenedor-carrusel-muestras-trabajo{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: -5px;
+        top: 16px;
+        width: 1000px;
+        height: 450px;
+
+    }
+     
+}
+
+//////////Community manager y diseño grafico
+
+.bg-servicio-community{
+    background-image: url('../images/communitymanagerPortada.jpg');
+}
+
+.bg-servicio-diseño{
+    background-image: url('../images/diseñograficoPortada.jpg');
+}
+.contenedor-encabezado-servicio{
+    margin: 20px auto;
+    width: 1170px;
+    height: 432px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    flex-direction: column;
+
+    .contenedor-texto-servicio{
+        width: 45%;
+        margin-left: 10%;
+    }
+}
+
+.seccion-packs-servicios{
+    background-color: #F2979A;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    .contenedor-titulo-packs{
+        padding: 50px 0px 30px 0px;
+        .titulo-seccion-packs{
+            color:#ffffff;
+            padding: 50px auto ;
+        }
+    }
+    
+
+    .contenedor-all-items-packs{
+        display: flex;
+        justify-content: space-around;
+        width: 1170px;
+        margin: 0px auto;
+    }
+    .contenedor-item-packs{
+        position: relative;
+        .titulo-item-pack{
+            position: absolute;
+            top: 30px;
+            background-color: #EDEEE0;
+            color: #617C72;
+        }
+
+    }
+}
+
+
+//////////Mis Servicios
+.contenedor-mis-servicios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .contenedor-servicio{
+        width: 570px;
+        
+    }
+}
+
+
+//////////Contacto
+
+.contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+    .contenedor-item-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0px;
+        .subtitulo-contacto{
+            text-align: center;
+
+        }
+        
+        .icono-contacto{
+            width: 45px;
+            height: 36px;
+        }
+    }
+
+    .img-ramas-contacto-1{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+    .img-ramas-contacto-2{
+        position: absolute;
+        top: 200px;
+        left: 0px;
+    }
+}
+
+.mapa-contacto{
+    margin-top: 20px;
+}
+.footer-contacto{
+    margin-top: 100px;
+}
+
+
+//////////botonwats
+
+.botonWhatsApp {
+    position: fixed;
+    bottom: 20px;
+    right: 30px ;
+
+}
+
+
+
+@import "responsive";
