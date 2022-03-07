@@ -680,10 +680,10 @@ footer{
 .seccion-packs-servicios{
     background-color: #F2979A;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     margin-top: 100px;
     margin-bottom: 80px;
-
+    
     .contenedor-titulo-packs{
         padding: 50px 0px 30px 0px;
         .titulo-seccion-packs{
@@ -698,18 +698,88 @@ footer{
         justify-content: space-around;
         width: 1170px;
         margin: 0px auto;
-    }
-    .contenedor-item-packs{
-        position: relative;
-        .titulo-item-pack{
-            position: absolute;
-            top: 30px;
-            background-color: #EDEEE0;
-            color: #617C72;
-        }
+        
+        .contenedor-item-packs{
+            position: relative;
+            
+            .contenedor-titulos-packs{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 40px;
 
+                .titulo-item-pack{
+                    margin-right: auto;
+                    padding-left: 30px;
+                    background-color: #EDEEE0;
+                    color: #617C72;
+                }
+            }
+            
+            .info-desplegable{
+                display: none;
+            }
+            
+            .boton-desplegable{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+
+.hover-packs-servicios:hover{
+    animation: extencion-info-packs 2s;
+    height: 900px;
+
+    .contenedor-all-items-packs .contenedor-item-packs{
+
+        .info-desplegable{
+            background-color: #F9DD94;
+            display: block;
+            padding: 40px 20px;
+            box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%),  
+            -5px 5px 20px 0 rgb(0 0 0 / 10%);
+
+            ul li{
+                color: #617C72;
+            }
+
+            .texto-desplegable{
+                margin-bottom: 30px;
+                color: #617C72;
+            }
+
+            .boton-desplegable{
+                display: block;
+                border: solid 2px #617C72;
+                border-radius: 2px;
+                margin-left: 260px;
+                /* margin-right: 40px; */
+                a{
+                    color: #617C72;
+                }
+                
+            }
+        }
+        
+        
+    }
+    
+
+    @keyframes extencion-info-packs {
+        0%{
+            height: 410px;
+        }
+        
+        100%{
+            height: 900px;
+        }
     }
 }
+
+
 
 
 //////////Mis Servicios
@@ -717,7 +787,13 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    .contenedor-titulo-principal-servicios{
+        display: flex;
+        justify-content: center;
+        .titulo-principal-servicios{
+            text-align: center;
+        }
+    }
     .contenedor-de-servicios{
         display: flex;
         
@@ -726,13 +802,29 @@ footer{
             height: 646px;
             background-color: #F2979A;
             margin: 50px 20px;
+            position: relative;
 
+            .contenedor-titulo-servicio{
+                position: absolute;
+                top: 70px;
+                width: auto;
+                margin-right: auto;
+                display: flex;
+                flex-direction: column;
+
+                .titulo-servicio-color{
+                    background-color: #EDEEE0;
+                    color:#F2979A;
+                    padding-left: 50px;
+                    margin-right: auto;
+                }
+            }
             .contenedor-img-servicio{
                 
 
                 .img-servicio{
                     width: 100%;
-                    
+                    height: 38 0px;
                 }
             }
 
@@ -740,7 +832,9 @@ footer{
                 height: auto;
                 color: #ffffff;
                 padding: 5% 13%;
+                ;
 
+                
                 .contenedor-texto-servicio{
                     height:170px;
                 }
