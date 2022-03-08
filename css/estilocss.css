@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Zen+Kaku+Gothic+New:wght@300&display=swap");
 * h2 {
   margin-top: 0px;
   margin-bottom: 0px !important;
@@ -11,10 +12,10 @@
   margin-top: 0px !important;
 }
 * .row {
-  --bs-gutter-x:0px;
+  --bs-gutter-x:0px!important;
 }
 * ul {
-  padding-left: 0px;
+  padding-left: 0px !important;
 }
 
 body {
@@ -23,25 +24,47 @@ body {
 
 .texto-1 {
   font-size: 4rem;
-  font-family: "Balivia";
+  font-family: "Lora", serif;
 }
 
 .texto-2 {
   font-size: 3rem;
-  font-family: "Balivia";
+  font-family: "Lora", serif;
   text-align: center;
 }
 
 .texto-3 {
   font-size: 1.2rem;
-  font-family: "Balivia";
-  font-weight: 100;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .texto-4 {
-  font-family: "Balivia";
-  font-weight: 100;
-  font-size: 15px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
+}
+
+.bold-texto {
+  font-weight: bolder;
+}
+
+.color-texto-1 {
+  color: #617C72;
+}
+
+.color-texto-2 {
+  color: #666;
+}
+
+.color-texto-3 {
+  color: #C2797B;
+}
+
+.hover-boton {
+  transition: all 0.7s;
+}
+
+.hover-boton:hover {
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -108,6 +131,7 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
   justify-content: center;
   width: 935px;
   margin: 0px auto;
+  margin-top: 30px;
 }
 
 .contenido-carrusel {
@@ -157,7 +181,7 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
 #serviciosHome div div .contenedor-items-servicios-color {
   background-color: #F2979A;
   margin: 20px;
-  height: 25em;
+  height: 27em;
   width: 28em;
   position: relative;
 }
@@ -177,7 +201,7 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
 }
 #serviciosHome div div .contenedor-items-servicios-color .contenedor-item-servicios {
   padding: 0px 5% 0px 20%;
-  justify-content: start;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   height: 338px;
@@ -194,9 +218,11 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
   margin-top: 3%;
   margin-bottom: 2%;
 }
+#serviciosHome div div .contenedor-items-servicios-color .contenedor-item-servicios .contenedor-boton {
+  margin-top: 32px;
+}
 #serviciosHome div div .contenedor-items-servicios-color .contenedor-item-servicios .ver-mas-item-servicios {
   width: 120px;
-  padding: 5px 10px;
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 4px;
@@ -205,6 +231,13 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  padding: 5px 10px;
+}
+
+.contenedor-boton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 #marcasHome {
@@ -236,10 +269,8 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
   margin-top: 26px;
 }
 #marcasHome div div .position p {
-  font-family: "Balivia";
-  font-weight: 100;
-  font-size: 17px;
-  height: 8em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1rem;
   color: white;
   padding: 10px 0em;
 }
@@ -278,11 +309,11 @@ header nav div .contenedor-navbarr .items-navbarr .item-navbarr a {
   height: 100px;
   width: 100px;
 }
-#testimonios div div .position p {
-  font-family: "Balivia";
-  font-weight: 100;
-  font-size: 17px;
-  color: #71978B;
+#testimonios div div .position .texto-testimonios {
+  display: flex;
+  flex-direction: column;
+}
+#testimonios div div .position .texto-testimonios p {
   padding: 1em 1em;
 }
 
@@ -444,7 +475,7 @@ footer .derechos {
 }
 .seccion-muestra-tabajo .titulo-muestra-trabajo .texto-pequeño-muestra {
   margin: 13px;
-  color: #EDEEE0;
+  color: #ffffff;
 }
 .seccion-muestra-tabajo .contenedor-carrusel-muestras-trabajo {
   display: flex;
@@ -551,7 +582,7 @@ footer .derechos {
   animation: fade-in 2s;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable ul {
-  padding-left: 40px;
+  padding-left: 40px !important;
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable ul li {
   color: #617C72;
@@ -564,15 +595,29 @@ footer .derechos {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 150px;
+  height: 30px;
+  color: #617C72;
   border: solid 2px #617C72;
   border-radius: 6px;
   margin-left: 170px;
-  width: 150px;
-  height: 30px;
-  /* margin-right: 40px; */
 }
 .hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable .boton-desplegable a {
+  width: 100%;
+  text-align: center;
   color: #617C72;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.hover-packs-servicios:hover .contenedor-all-items-packs .contenedor-item-packs .info-desplegable .ver-mas-item-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
 }
 @keyframes fade-in {
   0% {
@@ -638,23 +683,28 @@ footer .derechos {
   height: auto;
   color: #ffffff;
   padding: 5% 13%;
+  display: flex;
+  flex-direction: column;
 }
 .contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .contenedor-texto-servicio {
   height: 170px;
 }
 .contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .ver-mas-item-servicios {
-  width: 120px;
-  padding: 5px 10px;
+  width: 130px;
+  height: 40px;
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contenedor-mis-servicios .contenedor-de-servicios .contenedor-servicio .contenedor-descripcion-servicio .ver-mas-item-servicios a {
+  width: 100%;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  padding: 5px 10px;
 }
 
 .contacto {
@@ -671,10 +721,6 @@ footer .derechos {
 }
 .contacto .contenedor-item-contacto .subtitulo-contacto {
   text-align: center;
-}
-.contacto .contenedor-item-contacto .icono-contacto {
-  width: 45px;
-  height: 36px;
 }
 .contacto .img-ramas-contacto-1 {
   position: absolute;

@@ -9,13 +9,14 @@
     <!--favicon-->
 
   
-    <!--ESTILO DE CSS-->
-    <link rel="stylesheet" href="css/estilocss.css">
-    <link rel="stylesheet" href="scss/estilo.scss">
     
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!--ESTILO DE CSS-->
+    <link rel="stylesheet" href="css/estilocss.css">
+    <link rel="stylesheet" href="scss/estilo.scss">
+    
     
 
 </head>
@@ -27,7 +28,7 @@
         <nav class="container-fluid " >
             <div class="row">
                 <div class="col-md-12" >
-                    <a class="navbar-brand" href="index.html">
+                    <a class=" hover-boton navbar-brand" href="index.html">
                         <img class="logoBoot rounded mx-auto d-block" src="images/logomdpi.png" alt="logo">
                     </a>
                 
@@ -39,19 +40,19 @@
                 <div class="contenedor-navbarr">
                     <ul class="items-navbarr" >
                         <li class="item-navbarr" >
-                            <a class=""  href="../index.html">HOME</a>
+                            <a class="hover-boton"  href="index.html">HOME</a>
                         </li>
                         <li class="item-navbarr" >
-                            <a class=""  href="pages/quien-soy.html">QUIEN SOY</a>
+                            <a class="hover-boton"  href="pages/quien-soy.html">QUIEN SOY</a>
                         </li>
                         <li class="item-navbarr" >
-                            <a class=""  href="pages/mis-trabajos.html">MIS TRABAJOS</a>
+                            <a class="hover-boton"  href="pages/mis-trabajos.html">MIS TRABAJOS</a>
                         </li>
                         <li class="item-navbarr" >
-                            <a class=""  href="pages/mis-servicios.html">MIS SERVICIOS</a>
+                            <a class="hover-boton"  href="pages/mis-servicios.html">MIS SERVICIOS</a>
                         </li>
                         <li class="item-navbarr" >
-                            <a class=""  href="pages/contacto.html">CONTACTO</a>
+                            <a class="hover-boton"  href="pages/contacto.html">CONTACTO</a>
                         </li>
                         
                     </ul>
@@ -80,11 +81,12 @@
                     
                     <div class="contenido-carrusel d-none d-md-block">
 
-                        <h1 class="texto-1" >Bienvenidos <br>
+                        <h1 class="texto-1 color-texto-1" >
+                            Bienvenidos <br>
                             al universo visual
                         </h1>
 
-                        <p class="texto-3" style="color: #666;; text-align: left;">
+                        <p class="texto-3 texto-3 color-texto-2">
                             Nos expresamos a través del diseño. <br> 
                             Tu imagen vende <br>
                             Tu marca única, funcional y moderna
@@ -98,11 +100,11 @@
                     <img class="imgSlide rounded mx-auto d-block"  src="images/HomeSlideB.jpg" class="d-block w-100" alt="...">
                     <div class="contenido-carrusel d-none d-md-block">
 
-                        <h1 class="texto-1" >Bienvenidos <br>
+                        <h1 class="texto-1 color-texto-1" >Bienvenidos <br>
                             al universo visual
                         </h1>
 
-                        <p style="color: #666;; text-align: left;">
+                        <p class="texto-3 color-texto-2">
                             Nos expresamos a través del diseño. <br> 
                             Tu imagen vende <br>
                             Tu marca única, funcional y moderna
@@ -115,11 +117,11 @@
                     <img class="imgSlide rounded mx-auto d-block" src="images/HomeSlideC.jpg" class="d-block w-100" alt="...">
                     <div class="contenido-carrusel d-none d-md-block">
 
-                        <h1 class="texto-1" >Bienvenidos <br>
+                        <h1 class="texto-1 color-texto-1" >Bienvenidos <br>
                             al universo visual
                         </h1>
 
-                        <p style="color: #666;; text-align: left;">
+                        <p class="texto-3 color-texto-2">
                             Nos expresamos a través del diseño. <br> 
                             Tu imagen vende <br>
                             Tu marca única, funcional y moderna
@@ -140,7 +142,7 @@
 
         <!-- Titulo -->
         <section class="servicios-titulo">
-            <h2 class="texto-1">Mis servicios</h2>
+            <h2 class="texto-2">Mis servicios</h2>
         </section>
         <!-- Fin titulo -->
 
@@ -172,7 +174,7 @@
                         <div class="contenedor-descripcion-servicios">
 
                             <p class="texto-3">
-                                ¿Creamos juntas el universo visual de tu marca? <br>
+                                ¿Creamos juntas el universo visual <br> de tu marca? <br>
                                 Diseñamos tu Logotipo, recursos gráficos, papelería corporativa, packaging
                             </p>
 
@@ -180,14 +182,13 @@
                         <!-- fin descripcion -->
 
                         <!-- Boton ver mas -->
-                        <div>
-                            <div class="ver-mas-item-servicios">
+                        <div class="ver-mas-item-servicios hover-boton">
+                            <a href="pages/diseño-grafico.html"class="texto-4">
+                            
+                                VER MÁS
+                                
+                            </a> 
 
-                                <a href="pages/diseño-grafico.html" class="card-link">
-                                    Ver más
-                                </a>
-
-                            </div>
                         </div>
                         <!-- Fin boton ver mas -->
 
@@ -231,14 +232,17 @@
                         <!-- fin descripcion -->
 
                         <!-- Boton ver mas -->
-                        <div>
-                            <div class="ver-mas-item-servicios">
-
-                                <a href="pages/community-manager.html" class="card-link">
-                                    Ver más
-                                </a>
+                        <div class="contenedor-boton">
+                            
+                            <div class="ver-mas-item-servicios hover-boton">
+                                <a href="pages/community-manager.html" class="texto-4">
+                            
+                                    VER MÁS
+                                    
+                                </a> 
 
                             </div>
+                               
                         </div>
                         <!-- Fin boton ver mas -->
 
@@ -275,7 +279,7 @@
                 <div class="position" >
                     <img src="images/marcasA.jpg" alt="">
                     
-                    <p >Rimmel studio es un centro de belleza cosmética y cuidado personal. Trabajan técnicas de dermopigmentación, extensiones de pestañas, cejas, laminado de cejas, algunos tratamientos estéticos y más</p> 
+                    <p class="">Rimmel studio es un centro de belleza cosmética y cuidado personal. Trabajan técnicas de dermopigmentación, extensiones de pestañas, cejas, laminado de cejas, algunos tratamientos estéticos y más</p> 
                 </div>                                     
             </div>
             <!-- Fin item -->
@@ -325,8 +329,14 @@
                 <div class="position" >
 
                     <img src="images/testimoniosA.png" alt="">
+                    <div class="texto-testimonios color-texto-2 ">
+                        <p class="texto-3">"¡Me encanta la onda que tienen todos! es justo a lo que apunto!"</p> 
+                        <p class="texto-3 bold-texto">
+                            ROMINA FARIAS <br>
+                            UKELELE
+                        </p> 
+                    </div>
                     
-                    <p >¡Conoce los 3 packs pensados para el contenido mensual de tu marca en Redes Sociales!</p> 
 
                 </div>                                     
             </div>
@@ -337,8 +347,14 @@
 
                     <img src="images/testimoniosB.png" alt="">
                                        
-                    <p >¡Conoce los 3 packs pensados para el contenido mensual de tu marca en Redes Sociales!</p>   
-
+                    <div class="texto-testimonios color-texto-2 ">
+                        <p class="texto-3">"Hermoso todo!!! Ahora se hace difícil elegir cuál , porque todas las propuestas estan bárbaras, me encanto!!"</p>
+                        <p class="texto-3 bold-texto" >
+                            JESSICA MARTINEZ <br>
+                            JM Martinez
+                        </p> 
+                        
+                    </div>
                 </div>                 
             </div>      
 
@@ -353,11 +369,11 @@
    
     
     <!-- Seccion pedir presupuesto -->
-    <section class="presupuestoHome">
+    <section class="presupuestoHome hover-boton">
         <div>
-            <p class="texto-2">¿Querés tu presupuesto personalizado?</p>
+            <p class="texto-2 ">¿Querés tu presupuesto personalizado?</p>
 
-            <a class="boton-solicitar" href="pages/contacto.html">SOLICITAR</a>
+            <a class="boton-solicitar hover-boton" href="pages/contacto.html">SOLICITAR</a>
         </div>
         
         
